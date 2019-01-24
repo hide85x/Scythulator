@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='start'>
+        <h1>SCYTHCULATOR</h1>
+        <p>Instrukcja obsługi: Wybierz osiągnięty przez siebie poziom popularności, uzupełnij kolejne elementy, podlicz je, podlicz całość</p>
+        
+        <button class='reset'>RESET</button>
+
+    </div>
+
+
+    <section class='player'>
+
+
+        <div class='row'>
+
+            <div class='inter'>
+
+                <div class='interfejs'>
+                    <div class='poziom warunki'>
+                        <i class="far fa-heart fa-3x"></i>
+                        <button class='poz poz1'>1</button>
+                        <button class='poz poz2'>2</button>
+                        <button class='poz poz3'>3</button>
+                    </div>
+                </div>
+            </div>
+            <div class='interfejs gwiazdka'><i class="far fa-star fa-3x"></i>
+                <input onfocus="value=''" placeholder="zdobyte gwiazdy" type="number" min="1" max='6' class='gwi'>
+                <button type='button' class='btn btn-gwi'>PODLICZ</button>
+                <div class="wynik wynik-gwi">WYNIK</div>
+            </div>
+            <div class="interfejs zasoby"><i class="fas fa-balance-scale fa-3x"></i>
+                <input onfocus="value=''" placeholder="zebrane zasoby" type="number"min="1"  class='zas'>
+                <button type='button' class='btn btn-zas'>PODLICZ</button>
+                <div class="wynik wynik-zas">WYNIK</div>
+            </div>
+            <div class='interfejs terytorium'>
+                <i class="fab fa-buromobelexperte fa-3x"></i>
+                <input onfocus="value=''" placeholder="zajęte terytorium" type="number" min="1" class='ter'>
+                <button type='button' class='btn btn-ter'>PODLICZ</button>
+                <div class="wynik wynik-ter">WYNIK</div>
+            </div>
+
+            <div class='interfejs hajs'><i class="fas fa-dollar-sign fa-3x"></i>
+                <input onfocus="value=''" placeholder="zebrane dolary" type="number" min="1" class='haj'>
+                <button type='button' class='btn btn-haj'>PODLICZ</button>
+                <div class="wynik wynik-haj">WYNIK</div>
+            </div>
+
+            <div class='interfejs final'>
+                TWÓJ WYNIK
+                <button type='button' class='btn-fin'>PODLICZ</button>
+                <div class="wynik wynik-fin">WYNIK</div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
